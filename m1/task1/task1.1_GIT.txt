@@ -1,0 +1,16 @@
+29c6f81 HEAD@{0}: merge develop: Fast-forward
+510e304 HEAD@{1}: checkout: moving from develop to main
+29c6f81 HEAD@{2}: merge styles: Merge made by the 'recursive' strategy.
+142034c HEAD@{3}: merge images: Merge made by the 'recursive' strategy.
+8907f58 HEAD@{4}: checkout: moving from styles to develop
+5e90bdf HEAD@{5}: commit: styles + index
+23767d4 HEAD@{6}: commit: styles
+8907f58 HEAD@{7}: checkout: moving from develop to styles
+8907f58 HEAD@{8}: commit: Images +index
+c7c841e HEAD@{9}: checkout: moving from images to develop
+5d0ef4d HEAD@{10}: commit: add images
+c7c841e HEAD@{11}: checkout: moving from develop to images
+c7c841e HEAD@{12}: commit: +index.html
+510e304 HEAD@{13}: checkout: moving from main to develop
+510e304 HEAD@{14}: Branch: renamed refs/heads/master to refs/heads/main
+510e304 HEAD@{16}: commit (initial): 111
