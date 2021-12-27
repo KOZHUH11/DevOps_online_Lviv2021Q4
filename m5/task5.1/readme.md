@@ -1,6 +1,6 @@
 ##Task1.Part1
 -1) Log in to the system as root.
-![](/1.png)
+![](1.png)
 -2) Use the passwd command to change the password. Examine the basic parameters of the command. What system file does it change *?
 ![](/2.png)
 -3) Determine the users registered in the system, as well as what commands they execute. What additional information can be gleaned from the command execution?
