@@ -156,8 +156,24 @@ bg <task_number> - takes the process to the background.
 1. Check the implementability of the most frequently used OPENSSH commands in the MS
 Windows operating system. (Description of the expected result of the commands +
 screenshots: command – result should be presented)
+![](21.png)
 
 2. Implement basic SSH settings to increase the security of the client-server connection (at least
+
+to increase the security you nead:
+
+- strong username and password 
+- not standart port 
+- ssh version 2
+- Disable SSH Root Logins
+- Set SSH Connection Timeout Idle Value
+- Limit SSH Access to Certain Users
+- Configure a Limit for Password Attempts
+
+![](22.png)
+
+
+![](22,1.png)
 
 3. List the options for choosing keys for encryption in SSH. Implement 3 of them.
 
