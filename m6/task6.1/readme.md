@@ -1,7 +1,7 @@
 I created 2 VM and network according to the task
 
 network adapter VM1(192.168.56.1)
-![](2.png)
+![](1.png)
 
 network adapters VM2(192.168.56.10)
 ![](2.png)
