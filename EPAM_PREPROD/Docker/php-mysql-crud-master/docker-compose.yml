@@ -1,0 +1,32 @@
+version: '3.8'
+
+networks:
+  phpnet:
+    driver: bridge
+
+services:
+  db:
+    container_name: db
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    volumes:
+      - ./database/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: password123
+    networks:
+      - phpnet
+   
+  php-apache:
+    container_name: php-apache
+    image: php-apache:latest
+    restart: always
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - 8002:80
+    networks:
+      - phpnet
+

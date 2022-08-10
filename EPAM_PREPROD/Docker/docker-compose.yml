@@ -1,0 +1,36 @@
+version: '3.8'
+
+networks:
+  php_mysql_crud:
+    driver: bridge 
+      
+
+services:
+  php-apache-environment:
+    container_name: php-apache
+    image: 93e7b2459590
+    restart: always
+    depends_on:
+      - db
+    networks:
+      - php_mysql_crud
+    ports:
+      - 8002:80
+ 
+  db:
+    container_name: db
+    image: mysql:latest
+    networks:
+      - php_mysql_crud
+    ports:
+      - 3306:3306
+    volumes:
+      - ./php-mysql-crud-master/database:/var/lib/mysql
+      - ./php-mysql-crud-master/database/script.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: password123
+      MYSQL_DATABASE: php_mysql_crud
+      MYSQL_USER: root
+
+
+    
